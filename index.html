@@ -26,7 +26,7 @@
           <li>
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/1_sedona_house.png" alt="Sedona house">
+            <img src="img/1_sedona_house.jpg" width="800" alt="Sedona house">
             <ul>
               <li>
                 <h3>Жильё</h3>
@@ -45,7 +45,7 @@
           <li>
             <h3>Там есть Мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/2_canyon.png" alt="Sedona nature">
+            <img src="img/2_canyon.jpg" alt="Sedona nature">
           </li>
           <li>
             <h3>Небольшая площадь</h3>
@@ -67,7 +67,23 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <!-- Здесь будет форма поиска -->
+        <h3>Поиск гостиницы в Седоне<h3>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="check-in">Дата заезда:</label>
+        <input type="date" name="check-in" value="2017-04-24" id="check-in" placeholder="24.04.2017">
+        <br>
+        <label for="check-out">Дата выезда:</label>
+        <input type="date" name="check-out" value="2017-07-04" id="check-out" placeholder="04.07.2017">
+        <br>
+        <label for="adults">Взрослые</label>
+        <input type="text" name="adults" id="adults" value="1">
+        <label for="children">Дети</label>
+        <input type="text" name="children" id="children" value="0">
+        <br>
+        <input type="submit" value="Найти">
+
+        </form>
+
       </section>
     </main>
     <footer>
