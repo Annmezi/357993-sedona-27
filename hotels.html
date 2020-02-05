@@ -21,8 +21,45 @@
     <main>
       <h1>Поиск отеля</h1>
       <section>
-        <h2>Фильтр отелей</h2>
+        <h2 class="visually-hidden">Фильтр отелей</h2>
         <!--Фильтры-->
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset>
+           <legend>Инфраструктура</legend>
+           <ul>
+             <li>
+               <input type="checkbox" name="Бассейн" checked>Бассейн
+            </li>
+            <li>
+              <input type="checkbox" name="Парковка">Парковка
+           </li>
+           <li>
+             <input type="checkbox" name="Wi-Fi">Wi-Fi
+          </li>
+        </ul>
+       </fieldset>
+       <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="Гостиница" checked>Гостиница
+         </li>
+         <li>
+           <input type="checkbox" name="Мотель" checked>Мотель
+        </li>
+        <li>
+          <input type="checkbox" name="Апартаменты" checked>Апартаменты
+       </li>
+     </ul>
+    </fieldset>
+    <fieldset>
+     <legend>Стоимость в сутки (Р):</legend>
+     <label for "cost">От 0 до 3000
+     <input type="range" id="cost">
+ </fieldset>
+ <input type="submit" value=" Показать">
+</form>
+
       </section>
       <section>
         <h2>Результат поиска</h2>
