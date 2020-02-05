@@ -14,7 +14,7 @@
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
-          <li><a href="">Гостиницы</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -67,20 +67,29 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <h3>Поиск гостиницы в Седоне<h3>
+        <h3>Поиск гостиницы в Седоне</h3>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <label for="check-in">Дата заезда:</label>
-        <input type="date" name="check-in" value="2017-04-24" id="check-in" placeholder="24.04.2017">
-        <br>
-        <label for="check-out">Дата выезда:</label>
-        <input type="date" name="check-out" value="2017-07-04" id="check-out" placeholder="04.07.2017">
-        <br>
-        <label for="adults">Взрослые</label>
-        <input type="text" name="adults" id="adults" value="1">
-        <label for="children">Дети</label>
-        <input type="text" name="children" id="children" value="0">
-        <br>
+          <p>
+           <label for="check-in">Дата заезда:</label>
+           <input type="date" name="check-in" value="2017-04-24" id="check-in" placeholder="24.04.2017">
+         </p>
+         <p>
+           <label for="check-out">Дата выезда:</label>
+           <input type="date" name="check-out" value="2017-07-04" id="check-out" placeholder="04.07.2017">
+         </p>
+         <p>
+          <label for="adults">Взрослые</label>
+          <input type="button" id="adults">
+          <input type="text" name="adults" id="adults" value="1">
+          <input type="button" id="adults">
+          <label for="children">Дети</label>
+          <input type="button" id="children">
+          <input type="text" name="children" id="children" value="0">
+          <input type="button" id="children">
+        </p>
+        <p>
         <input type="submit" value="Найти">
+      </p>
 
         </form>
 
