@@ -10,19 +10,40 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background: white url("img/photo_main.jpg") no-repeat center 55px;
+  background: white;
 }
+
+
 
 .start-image {
   height: 508px;
   background:
   url("img/polygon.png") no-repeat center bottom,
-  url("img/welcome.png") no-repeat center;
+  url("img/welcome.png") no-repeat center,
+  url("img/photo_main.jpg") no-repeat center top;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 a {
   text-decoration: none;
 }
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: #81b3d2;
+}
+
 
 .main-navigation {
   line-height: 26px;
@@ -38,7 +59,8 @@ a {
   list-style: none;
 }
 
-.site-navigation a
+/*.site-navigation a,
+.site-navigation a:visited
  {
   color: black;
 }
@@ -48,43 +70,56 @@ a {
  {
   color: #81b3d2;
 }
-.site-navigation a:visited {
+*/
+
+.link-current {
+  color: #766357
+}
+
+/*Заголовки*/
+
+.header {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   color: black;
 }
 
-h1 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+.header-large {
+  font-size: 30px;
   text-align: center;
 
-  background-color: white;
 }
-
-.features {
-  text-align: center;
-  background-color: white;
-  padding-top: 57px;
-  padding-bottom: 0;
-}
-.features h2 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-.features h3 {
-  font-size: 21px;
+.header-feature {
   line-height: 21px;
+  text-align: center;
+
 }
+.white-header {
+  line-height: 21px;
+  color: white;
+  text-align: center;
+}
+
+.lead {
+  background-color: white;
+  text-align: center;
+}
+
+/*Списки преимуществ*/
+.features {
+  background-color: white;
+  text-align: center;
+  list-style: none;
+}
+
 .feature1-2 {
   color: white;
   background: #81B3D2;
-  padding-top: 60px;
 }
+
 .feature3-5 {
   background-color: #eeeeee;
-  padding-top: 60px;
 
 }
 
@@ -97,27 +132,24 @@ h1 {
 .town-feature1 {
   padding-top: 158px;
 
-
   background-image: url("img/house-icon.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
 
 .town-feature2 {
-  padding-top: 158px;
 
   background-image: url("img/burger-icon.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
 .town-feature3 {
-  padding-top: 158px;
 
   background-image: url("img/souvenir-icon.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
-
+/*Бронирование*/
 .booking {
   background: white;
   text-align: center;
@@ -127,11 +159,6 @@ h1 {
   background-color: #766357;
 }
 
-.large-text {
-  font-size: 30px;
-  font-weight: 700;
-  color: black;
-}
 
 .book {
   background-color: white;
@@ -145,4 +172,122 @@ h1 {
   font-size: 21px;
   background-color: #81B3D2;
 
+}
+.map {
+  height: 595px;
+  background: url("img/map.jpg") no-repeat top;
+}
+
+ /*Список гостиниц 2-я страница*/
+
+
+.found-menu {
+  font-size: 12pt;
+  color: black;
+  list-style: none;
+  font-weight: 400;
+}
+.found-menu-1 {
+  color: #81B3D2;
+
+}
+
+.found-menu-2 {
+
+  color: #cacaca;
+  border-bottom: #81B3D2 dashed 1px;
+}
+
+ .hotel {
+   list-style: none;
+   background-color: white;
+   \border-collapse: collapse;
+ }
+
+ .hotel-unit {
+   border-top: #cacaca solid 1px;
+   border-bottom: #cacaca solid 1px;
+ }
+
+.info-button {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #81B3D2;
+}
+.info-button a:hover,
+.info-button a:focus {
+  background-color: #669ec0;
+}
+.info-button a:visited {
+  color: inherit;
+}
+
+.book-button {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #766357;
+}
+.book-button a:hover,
+.book-button a:focus {
+  background-color: #604e43;
+}
+.book-button a:visited {
+  color: inherit;
+}
+.rating {
+  color: #666666;
+  background-color: #F2F2F2;
+}
+
+.stars-4 {
+  background: url("img/4 stars.png") no-repeat;
+  height: 17px;
+}
+.stars-3 {
+  background: url("img/3 stars.png") no-repeat;
+  height: 17px;
+}
+.stars-2 {
+  background: url("img/2 stars.png") no-repeat;
+  height: 17px;
+}
+
+
+/*Футер*/
+.footer {
+  background-color: white;
+}
+.footer-header {
+  text-align: left;
+}
+
+.footer-link {
+  opacity: 0;
+}
+
+.social-box {
+  list-style: none;
+  width: 46px;
+  height: 48px;
+}
+.twitter {
+  background: url("img/twitter.svg") no-repeat center bottom;
+}
+
+.facebook {
+
+  background: url("img/facebook.svg") no-repeat center;
+}
+
+.youtube {
+
+  background: url("img/youtube.svg") no-repeat center;
+}
+
+.htmlacademy {
+  height: 41px;
+  width: 114px;
+  background: url("img/logo-htmlacademy.svg") no-repeat center;
 }
